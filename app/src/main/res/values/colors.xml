@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="seed">#6750A4</color>
+    <color name="subtitle_background">#80000000</color>
+    <color name="timeline_background">#FF2C2C2C</color>
+    <color name="timeline_selected">#FF4CAF50</color>
+</resources>
