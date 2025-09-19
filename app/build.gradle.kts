@@ -91,7 +91,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     // FFMPEG
-    implementation("com.arthenica:ffmpeg-kit-full:6.0")
+    implementation("com.arthenica:ffmpeg-kit-full:5.1.LTS")
 
     // Material Icons
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
