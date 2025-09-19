@@ -56,15 +56,16 @@ class MainActivity : ComponentActivity() {
                         composable("main") {
                             MainScreen(
                                 onVideoSelected = { uri ->
-                                    navController.navigate("video_player/$uri")
+                                    navController.currentBackStackEntry?.savedStateHandle?.set("video_uri", uri)
+                                    navController.navigate("video_player")
                                 }
                             )
                         }
-                        composable("video_player/{videoUri}") { backStackEntry ->
-                            val videoUri = backStackEntry.arguments?.getString("videoUri")
+                        composable("video_player") { backStackEntry ->
+                            val videoUri = navController.previousBackStackEntry?.savedStateHandle?.get<Uri>("video_uri")
                             videoUri?.let { uri ->
                                 VideoPlayerScreen(
-                                    videoUri = Uri.parse(uri),
+                                    videoUri = uri,
                                     onBack = { navController.popBackStack() }
                                 )
                             }
