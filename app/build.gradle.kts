@@ -73,8 +73,24 @@ dependencies {
     // Permission handling
     implementation("com.google.accompanist:accompanist-permissions:0.32.0")
     
-    // File picker
+    // File picker and SAF
     implementation("androidx.documentfile:documentfile:1.0.1")
+    implementation("androidx.activity:activity-ktx:1.8.2")
+    
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    
+    // JSON parsing
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    
+    // Network requests for translation
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    
+    // FFMPEG support
+    implementation("com.arthenica:ffmpeg-kit-full:5.1")
+    
+    // Material Icons Extended
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
     
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

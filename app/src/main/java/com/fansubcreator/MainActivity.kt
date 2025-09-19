@@ -20,7 +20,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.fansubcreator.ui.screens.MainScreen
-import com.fansubcreator.ui.screens.VideoPlayerScreen
+import com.fansubcreator.ui.screens.AdvancedEditorScreen
 import com.fansubcreator.ui.theme.FansubCreatorTheme
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
                         composable("video_player") { backStackEntry ->
                             val videoUri = navController.previousBackStackEntry?.savedStateHandle?.get<Uri>("video_uri")
                             videoUri?.let { uri ->
-                                VideoPlayerScreen(
+                                AdvancedEditorScreen(
                                     videoUri = uri,
                                     onBack = { navController.popBackStack() }
                                 )
