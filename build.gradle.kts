@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.onlynoco.fansubcreator"  // Change to your package
+    namespace = "com.onlynoco.fansubcreator"  // Your package name
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.onlynoco.fansubcreator" // Change to your package
+        applicationId = "com.onlynoco.fansubcreator" // Your package name
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -38,19 +38,13 @@ android {
     }
 }
 
-repositories {
-    google()
-    mavenCentral()
-    maven { url = uri("https://www.jitpack.io") }
-}
-
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.10")
 
     // FFmpeg Kit (latest stable)
     implementation("com.arthenica:ffmpeg-kit-full:6.0")
 
-    // Optional AndroidX dependencies, add as needed
+    // Optional AndroidX dependencies
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.10.0")
