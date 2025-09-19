@@ -2,7 +2,7 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()  // Needed for android & kotlin plugins
+        gradlePluginPortal()
     }
 }
 
